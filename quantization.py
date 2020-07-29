@@ -247,8 +247,12 @@ if __name__ == '__main__':
                 k_W = all_W_kernels[i]
                 k_G = all_G_kernels[i]
                 V = k_W.data
-                #k_G.data = quantize_bw(V)
                 
+                #####Binary Connect#####
+                #k_G.data = quantize_bw(V)
+                #########################
+                
+                ######Binary Relax########################
                 if epoch<120:
                     k_G.data = (eta*quantize_bw(V)+V)/(1+eta)
                     
@@ -256,6 +260,7 @@ if __name__ == '__main__':
                     k_G.data = quantize_bw(V)
                    
                 k_W.data, k_G.data = k_G.data, k_W.data
+                #############################################
                 
             score= net(x)
             loss = criterion(score, target)
