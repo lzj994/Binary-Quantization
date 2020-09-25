@@ -3,6 +3,7 @@ Implementation of Binary quantization of ResNet. Code used in work: https://arxi
 
 
 References:
+
 Binary Connect: https://arxiv.org/abs/1511.00363
 
 Binary Relax: https://arxiv.org/abs/1801.06313
