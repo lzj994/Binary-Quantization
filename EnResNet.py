@@ -469,8 +469,8 @@ if __name__ == '__main__':
             
             loss.backward()
 
-            for p in net.parameters():
-                p.grad.data.clamp_(-5.0,5.0)
+            #for p in net.parameters():
+                #p.grad.data.clamp_(-5.0,5.0)
 
             for i in range(len(all_W_kernels)):
                 k_W = all_W_kernels[i]
