@@ -3,10 +3,12 @@ Implementation of Binary quantization of ResNet. Code used in work: https://arxi
 
 
 Trained models:
-|    Model   | Channel Sparsity | Loss |
-|------------|------------------|------|
-|En1ResNet56 |      33.18%      |  (9) |
-
+|    Model   | Dataset  | Channel Sparsity | Loss |
+|------------|----------|------------------|------|
+|En1ResNet56 |  Cifar10 |   33.18%         |  (9) |
+|En1ResNet110|  Cifar100|   23.93%         |  (9) |
+|En2ResNet56 |  Cifar100|   43.94%         |  (9) |
+|En2ResNet56 |  SVHN    |   49.03%         |  (9) |
 
 
 References:
