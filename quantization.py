@@ -4,6 +4,7 @@
 Created on Mon May 25 20:11:45 2020
 
 @author: zhijianli
+The basic ResNet architecture is from https://github.com/akamaster/pytorch_resnet_cifar10
 """
 
 # -*- coding: utf-8 -*-
